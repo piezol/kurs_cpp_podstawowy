@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "zadanie1.cc"
+#include "zadanie1.cpp"
 
 
 TEST(zadanie1, ShouldAdd) {

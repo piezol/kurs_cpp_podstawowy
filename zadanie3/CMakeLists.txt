@@ -12,7 +12,7 @@ include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 # Unit Tests
 ################################
 # Add test cpp file
-add_executable( test_zadanie test_zadanie3.cc )
+add_executable( test_zadanie test_zadanie3.cpp )
 # Link test executable against gtest & gtest_main
 target_link_libraries(test_zadanie gtest gtest_main)
 add_test( test_zadanie test_zadanie )
