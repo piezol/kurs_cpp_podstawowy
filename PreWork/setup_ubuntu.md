@@ -23,7 +23,7 @@
 4. Uruchom VSC i zainstaluj rozszerzenia
 
   * C/C++
-  * C/C++ Intellisense
+  * C++ Intellisense
   * CMake
   * CMake Tools
 
