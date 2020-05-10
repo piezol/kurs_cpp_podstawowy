@@ -1,12 +1,12 @@
-bool Game::CheckWinCondition() const {
+bool Game::checkWinCondition() const {
     return player_->GetMoney() >= final_goal_;
 }
 
-bool Game::CheckLooseCodition() const {
+bool Game::checkLooseCodition() const {
     return player_->GetMoney() == SIZE_MAX;
 }
 
-void Game::PrintMenu() {
+void Game::printMenu() {
     std::cout << "Money: " << player_->GetMoney() 
               << " Day: " << time_->GetElpasedTime()
               << " Days left: " << days_ - time_->GetElpasedTime()
@@ -14,7 +14,7 @@ void Game::PrintMenu() {
               << map_->GetCurrentPosition()->GetCoordinates() << "\n";
 }
 
-void Game::PrintOptions() {
+void Game::printOptions() {
     std::cout << "\n"
               << "1) Travel\n"
               << "2) Sell\n"
@@ -24,14 +24,14 @@ void Game::PrintOptions() {
               << "Choice: ";
 }
 
-void Game::PrintWinScreen() {
+void Game::printWinScreen() {
     system("cls");
     std::cout << "CONGRATULATIUON! You earn: " << player_->GetMoney()
               << " money in: " << time_->GetElpasedTime() << " days";
     std::this_thread::sleep_for(5s);
 }
 
-void Game::PrintLooseScreen() {
+void Game::printLooseScreen() {
     system("cls");
     std::cout << "GAME OVER! You earn: " << player_->GetMoney()
               << " money in: " << time_->GetElpasedTime() << " days";
