@@ -1,4 +1,17 @@
-1. Zainstaluj Visual Studio Code
+1. Zainstaluj gita, g++, make
+
+  * `sudo apt update`
+  * `sudo apt install git`
+  * `sudo apt install build-essential`
+  * `sudo apt-get install manpages-dev`
+  
+2. Sprawdź, czy programy się zainstalowały. Komunikat `command not found` oznacza błąd w instalacji.
+
+  * `git --version`
+  * `g++ --version`
+  * `make --version`
+
+3. Zainstaluj Visual Studio Code
 
   * `sudo apt update`
   * `sudo apt install software-properties-common apt-transport-https wget`
@@ -7,20 +20,12 @@
   * `sudo apt update`
   * `sudo apt install code`
 
-2. Uruchom VSC i zainstaluj rozszerzenia
+4. Uruchom VSC i zainstaluj rozszerzenia
 
   * C/C++
   * C/C++ Intellisense
   * CMake
   * CMake Tools
-  
-3. Zainstaluj g++ i CMake
-
-  * `sudo apt update`
-  * `sudo apt install build-essential`
-  * `sudo apt-get install manpages-dev`
-
-4. Sprawdź, czy g++ sie zainstalował: `g++ --version`
 
 5. Zainstaluj CMake: 
 
