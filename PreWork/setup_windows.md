@@ -4,7 +4,7 @@
 
 1. [Ściągnij Visual Studio Code](https://code.visualstudio.com/download).
 2. Uruchom VSC i przejdź do rozszerzeń (extensions).
-3. Zainstaluj C/C++, C/C++ Intellisense, CMake, CMake Tools.
+3. Zainstaluj C/C++, C++ Intellisense, CMake, CMake Tools.
  
 ## Instalacja git-bash
 
