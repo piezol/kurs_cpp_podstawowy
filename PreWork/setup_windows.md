@@ -48,7 +48,7 @@
     std::cout << "Podaj swoje imie: ";
     std::string name;
     std::cin >> name;
-    std::cout << "\nHello wordl! " << name << "\n";
+    std::cout << "\nHello world! " << name << "\n";
     
     return 0;
   }
