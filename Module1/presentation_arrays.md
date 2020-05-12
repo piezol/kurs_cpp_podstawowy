@@ -1,9 +1,8 @@
 <!-- .slide: data-background="#111111" -->
+
 # Podstawy C++
 
 ## Tablice
-
-<!-- ![Coders School](../img/coders_school_logo.png "Coders School") <!-- .element: class="plain" width="500" -->
 
 <a href="https://coders.school">
     <img width="500" data-src="../img/coders_school_logo.png" alt="Coders School" class="plain">
@@ -22,7 +21,7 @@
 
 ===
 
-<img width="600" data-src="array.gif" alt="Tablica w pamięci" class="plain">
+<img width="600" data-src="img/array.gif" alt="Tablica w pamięci" class="plain">
 
 * W C++ tablica znajduje się w jednym, ciągłym obszarze w pamięci i jest nierozłączna (nie można usuwać jej elementów)
 * Wszystkie elementy są tego samego typu
