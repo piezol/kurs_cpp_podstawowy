@@ -1,6 +1,10 @@
 #include <iostream>
 
-// Write your function here
+void printString(const std::string& str, int count) {
+    for (int i = 0; i < count; ++i) {
+        std::cout << str << " ";
+    }
+}
 
 int main() {
     printString("Hello", 5);

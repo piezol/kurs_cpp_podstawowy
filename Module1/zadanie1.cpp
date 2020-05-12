@@ -1,8 +1,6 @@
 #include <iostream>
 
-size_t multiply(int lhs, int rhs) {
-    return lhs * rhs;
-}
+// Write your function here
 
 int main() {
     std::cout << "4 * 5: " << multiply(4, 5) << "\n";
