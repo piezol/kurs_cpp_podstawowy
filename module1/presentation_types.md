@@ -45,11 +45,11 @@ Można tworzyć wskaźniki `void*` (zła praktyka w C++).
 * `char` -> od `-128` do `127`
 * `unsigned char` -> od `0` do `255`
 
-Przedrostek `unsigned` oznacza, że typ jest bez znaku (bez liczb ujemnych), czyli od 0 do jakieś dodatniej wartości.
+Przedrostek `unsigned` oznacza, że typ jest bez znaku (bez liczb ujemnych), czyli od 0 do jakieś dodatniej wartości. 
 
-Rozmiar typów logicznych i znakowych to zawsze 1 bajt.
+Rozmiar typów logicznych i znakowych to zawsze 1 bajt. <!-- .element: class="fragment fade-in" -->
 
-Rozmiary dalszych typów zależą od platformy np. 32 bity, 64 bity.
+Rozmiary dalszych typów zależą od platformy np. 32 bity, 64 bity. <!-- .element: class="fragment fade-in" -->
 
 ===
 
@@ -67,13 +67,13 @@ Rozmiary dalszych typów zależą od platformy np. 32 bity, 64 bity.
 * `float` - zwykle 4 bajty
 * `double` - zwykle 8 bajtów
 * `long double` - zwykle 10 bajtów (rzadko stosowany)
-* Nie istnieją wersje `unsigned`. Typy zmiennoprzecinkowe zawsze mogą mieć ujemne wartości
-* Posiadają specjalne wartości:
+* Typy zmiennoprzecinkowe zawsze mogą mieć ujemne wartości (Nie istnieją wersje unsigned) <!-- .element: class="fragment fade-in" -->
+* Posiadają specjalne wartości: <!-- .element: class="fragment fade-in" -->
   * `0`, `-0` (ujemne zero)
   * `-Inf`, `+Inf` (Infinity, nieskończoność)
   * `NaN` (Not a Number)
 
-Uwaga! Porównanie `NaN == NaN` daje `false`
+Uwaga! Porównanie `NaN == NaN` daje `false` <!-- .element: class="fragment highlight-red" -->
 
 Zaawansowana lektura: [Standard IEEE754 definiujący typy zmiennoprzecinkowe](https://en.wikipedia.org/wiki/IEEE_754)
 ===
@@ -112,10 +112,16 @@ W pewnych miejscach możemy użyć typu `auto`. Kompilator sam wydedukuje typ, n
 
 ===
 
-Standard C++ definiuje taką zależność pomiędzy rozmiarami typów
+## Rozmiary typów
+
+Standard C++ definiuje taką zależność pomiędzy rozmiarami typów całkowitoliczbowych
 
 ```cpp
-1 == sizeof(char) <= sizeof(short) <= sizeof(int) <= sizeof(long) <= sizeof(long long)
+1 == sizeof(char) \
+  <= sizeof(short) \
+  <= sizeof(int) \
+  <= sizeof(long) \
+  <= sizeof(long long);
 ```
 
 ===

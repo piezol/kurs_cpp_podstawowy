@@ -22,10 +22,10 @@ Podstawowe pętle: `while`, `for`
 
 `while` używamy, gdy chcemy coś wykonać dopóki nie zostanie spełniony jakiś warunek. Przeważnie nie mamy pojęcia, kiedy to następy (nie znamy liczby kroków) np:
 
-* Przeglądamy koszule w Internecie dopóki nie znajdziemy pasującej do nas
-* Powtarzamy walkę z tym samym bossem aż go nie pokonamy
-* Jemy zupę, aż talerz nie będzie pusty
-* Przeszukujemy kontakty w telefonie aż nie znajdziemy interesującej nas osoby
+* Przeglądamy koszule w Internecie dopóki nie znajdziemy pasującej do nas <!-- .element: class="fragment fade-in" -->
+* Powtarzamy walkę z tym samym bossem aż go nie pokonamy <!-- .element: class="fragment fade-in" -->
+* Jemy zupę, aż talerz nie będzie pusty <!-- .element: class="fragment fade-in" -->
+* Przeszukujemy kontakty w telefonie aż nie znajdziemy interesującej nas osoby <!-- .element: class="fragment fade-in" -->
 
 ===
 
@@ -37,7 +37,7 @@ while (condition) {
 }
 ```
 
-### Przykład
+### Przykład <!-- .element: class="fragment fade-in" -->
 
 ```cpp
 while (a == b) {
@@ -45,6 +45,7 @@ while (a == b) {
     std::cin >> b;
 }
 ```
+<!-- .element: class="fragment fade-in" -->
 
 ===
 
@@ -52,10 +53,10 @@ while (a == b) {
 
 `for` używamy, gdy chcemy coś wykonać określoną liczbę razy. Przeważnie znamy liczbę kroków np:
 
-* Wypełniamy ankietę składającą się z 10 pytań -> liczba kroków 10
-* Przemieszczamy się z punktu A do B -> liczba kroków = dystans / długość kroku
-* Piszemy egzamin składający się z 4 zadań -> liczba kroków (jak umiemy to 4, jak nie to jeszcze wykonujemy podprogram `ściągaj`)
-* Zapinamy koszule (o ile nie wyrwiemy żadnego guzika)
+* <!-- .element: class="fragment fade-in" --> Wypełniamy ankietę składającą się z 10 pytań -> liczba kroków 10
+* <!-- .element: class="fragment fade-in" --> Przemieszczamy się z punktu A do B -> liczba kroków = dystans / długość kroku
+* <!-- .element: class="fragment fade-in" --> Piszemy egzamin składający się z 4 zadań -> liczba kroków (jak umiemy to 4, jak nie to jeszcze wykonujemy podprogram `ściągaj`)
+* <!-- .element: class="fragment fade-in" --> Zapinamy koszule (o ile nie wyrwiemy żadnego guzika)
 
 ===
 
@@ -67,13 +68,14 @@ for (variable = initial_value; condition; variable_change) {
 }
 ```
 
-### Przykład
+### Przykład <!-- .element: class="fragment fade-in" -->
 
 ```cpp
 for (size_t i = 0 ; i < 10 ; i+=2) {
     std::cout << "i: " << i << '\n';
 }
 ```
+<!-- .element: class="fragment fade-in" -->
 
 ===
 

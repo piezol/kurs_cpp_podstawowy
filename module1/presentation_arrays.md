@@ -14,10 +14,10 @@
 
 # 🚃🚃🚃🚃🚃🚃🚃🚃🚃🚃
 
-* Tablice można traktować jak wagony w pociągu
-* Ustawione kolejno jeden po drugim i połączone ze sobą
-* Mogą pomieścić różne typy, jak człowiek, węgiel, itp.
-* 10 wagonów z węglem możemy zapisać jako `Coal tab[10]` - oznacza to, że tworzymy tablicę, która przechowuje 10 elementów typu Coal (węgiel).
+* <!-- .element: class="fragment fade-in" --> Tablice można traktować jak wagony w pociągu
+* <!-- .element: class="fragment fade-in" --> Ustawione kolejno jeden po drugim i połączone ze sobą
+* <!-- .element: class="fragment fade-in" --> Mogą pomieścić różne typy, jak człowiek, węgiel, itp.
+* <!-- .element: class="fragment fade-in" --> 10 wagonów z węglem możemy zapisać jako `Coal tab[10]` - oznacza to, że tworzymy tablicę, która przechowuje 10 elementów typu Coal (węgiel).
 
 ===
 
@@ -47,7 +47,7 @@ Można to zrobić lepiej z użyciem pętli. <!-- .element: class="fragment fade-
 
 ### `operator[]`
 
-Do elementu tablicy odwołujemy się przez `operator[]`. Musimy pamiętać, żeby zawsze odwoływać się do istniejącego elementu tablicy. Inaczej program będzie miał niezdefiniowane zachowanie, gdyż spróbujemy uzyskać dostęp do pamięci, która nie należy do tablicy. Mówimy, że znajdują się tam śmieci. W najlepszym przypadku system operacyjny to wykryje i dostaniemy **crash** (segmentation fault). W najgorszym będziemy działać na niepoprawnych losowych danych. Skutki mogą być bardzo poważne (katastrofy promów kosmicznych, napromieniowanie od aparatury medycznej).
+Do elementu tablicy odwołujemy się przez `operator[]`. Musimy pamiętać, żeby zawsze odwoływać się do istniejącego elementu tablicy. Inaczej program będzie miał niezdefiniowane zachowanie, gdyż spróbujemy uzyskać dostęp do pamięci, która nie należy do tablicy. Mówimy, że znajdują się tam śmieci. W najlepszym przypadku system operacyjny to wykryje i dostaniemy **crash** (segmentation fault). W najgorszym będziemy działać na niepoprawnych losowych danych. Skutki mogą być bardzo poważne (<span class="fragment highlight-red">katastrofy promów kosmicznych</span>, <span class="fragment highlight-red">napromieniowanie od aparatury medycznej</span>).
 
 ```cpp
 int tab[10];

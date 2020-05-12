@@ -14,10 +14,10 @@
 
 Instrukcja warunkowa to nic innego jak zadanie programowi pytania np.:
 
-* Czy otrzymałeś już wszystkie dane?
-* Czy życie bossa spadło do 0?
-* Czy osiągnięcie zostało zdobyte przez gracza?
-* Czy liczba jest większa od maksymalnie dopuszczanej?
+* Czy otrzymałeś już wszystkie dane? <!-- .element: class="fragment fade-in" -->
+* Czy życie bossa spadło do 0? <!-- .element: class="fragment fade-in" -->
+* Czy osiągnięcie zostało zdobyte przez gracza? <!-- .element: class="fragment fade-in" -->
+* Czy liczba jest większa od maksymalnie dopuszczanej? <!-- .element: class="fragment fade-in" -->
 
 ===
 
@@ -39,14 +39,16 @@ Możemy połączyć warunki operatorem **lub** (`||`, `or`) bądź **i** (`&&`, 
 ```cpp
 if (are_potatoes_eatten && is_meat_eatten && is_salad_eatten)
 ```
+<!-- .element: class="fragment fade-in" -->
 
-Wszystkie 3 warunki muszą zostać spełnione
+Wszystkie 3 warunki muszą zostać spełnione <!-- .element: class="fragment fade-in" -->
 
 ```cpp
 if (player_has_20_dex || player_has_18_int || player_has_22_str)
 ```
+<!-- .element: class="fragment fade-in" -->
 
-W tym przypadku wystarczy spełnić jeden z 3 warunków. Mogą zostać spełnione wszystkie, ale wystarczy by został spełniony jeden dowolny.
+W tym przypadku wystarczy spełnić jeden z 3 warunków. Mogą zostać spełnione wszystkie, ale wystarczy by został spełniony jeden dowolny. <!-- .element: class="fragment fade-in" -->
 
 ===
 
