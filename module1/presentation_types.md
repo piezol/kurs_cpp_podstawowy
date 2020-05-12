@@ -5,10 +5,10 @@
 ## Typy danych
 
 <a href="https://coders.school">
-    <img width="500" data-src="../img/coders_school_logo.png" alt="Coders School" class="plain">
+    <img width="500" src="../img/coders_school_logo.png" alt="Coders School" class="plain">
 </a>
 
-===
+---
 
 ## Prosta matematyka
 
@@ -19,14 +19,14 @@
 * <!-- .element: class="fragment fade-in" --> Zatem na 1 bajcie (8 bitach) możemy zapisać 128 liczb, np. od 0 do 127
 * <!-- .element: class="fragment fade-in" --> Jeżeli w totolotku losujemy 32 numerki, (32/8 = 4) czyli 4 bajty to takich kombinacji jest `2^32` (czyli ponad 4 miliardy)
 
-===
+---
 
 ## Typ pusty - `void`
 
 Nie można tworzyć obiektów typu `void`. Służy do zaznaczenia, że funkcja nic nie zwraca.
 Można tworzyć wskaźniki `void*` (zła praktyka w C++).
 
-===
+---
 
 ## Typ logiczny - `bool`
 
@@ -36,7 +36,7 @@ Można tworzyć wskaźniki `void*` (zła praktyka w C++).
   * `false`
   * `true`
 
-===
+---
 
 ## Typy znakowe
 
@@ -51,7 +51,7 @@ Rozmiar typów logicznych i znakowych to zawsze 1 bajt. <!-- .element: class="fr
 
 Rozmiary dalszych typów zależą od platformy np. 32 bity, 64 bity. <!-- .element: class="fragment fade-in" -->
 
-===
+---
 
 ## Typy całkowitoliczbowe
 
@@ -60,7 +60,7 @@ Rozmiary dalszych typów zależą od platformy np. 32 bity, 64 bity. <!-- .eleme
 * `long (unsigned long)` - co najmniej 4 bajty
 * `long long (unsigned long long)` - co najmniej 8 bajtów
 
-===
+---
 
 ## Typy zmiennoprzecinkowe
 
@@ -76,7 +76,8 @@ Rozmiary dalszych typów zależą od platformy np. 32 bity, 64 bity. <!-- .eleme
 Uwaga! Porównanie `NaN == NaN` daje `false` <!-- .element: class="fragment highlight-red" -->
 
 Zaawansowana lektura: [Standard IEEE754 definiujący typy zmiennoprzecinkowe](https://en.wikipedia.org/wiki/IEEE_754)
-===
+
+---
 
 ## Aliasy typów
 
@@ -94,7 +95,7 @@ using Fraction = double;
 Fraction b = 10.2;  // double b = 10.2;
 ```
 
-===
+---
 
 ## Typ `auto`
 
@@ -110,7 +111,7 @@ W pewnych miejscach możemy użyć typu `auto`. Kompilator sam wydedukuje typ, n
   auto sth;             // compilation error, unable to deduce type
 ```
 
-===
+---
 
 ## Rozmiary typów
 
@@ -124,7 +125,7 @@ Standard C++ definiuje taką zależność pomiędzy rozmiarami typów całkowito
   <= sizeof(long long);
 ```
 
-===
+---
 
 ## Operacje arytmetyczne
 
@@ -150,7 +151,7 @@ int a = 5;
 a--; // a = 5
 ```
 
-===
+---
 
 ## Pytania
 
@@ -169,7 +170,7 @@ auto j = i++ - 1;
 
 `int` <!-- .element: class="fragment fade-in" -->
 
-===
+---
 
 ## Mały suchar
 
@@ -177,7 +178,7 @@ Kim jest Hobbit? <!-- .element: class="fragment fade-in" -->
 
 Jest to 1/8 Hobbajta :) <!-- .element: class="fragment fade-in" -->
 
-===
+---
 
 Linki dla poszerzenia wiedzy:
 
