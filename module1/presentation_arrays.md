@@ -8,7 +8,7 @@
     <img width="500" data-src="../img/coders_school_logo.png" alt="Coders School" class="plain">
 </a>
 
-===
+___
 
 ## Wprowadzenie to tablic
 
@@ -19,7 +19,7 @@
 * <!-- .element: class="fragment fade-in" --> Mogą pomieścić różne typy, jak człowiek, węgiel, itp.
 * <!-- .element: class="fragment fade-in" --> 10 wagonów z węglem możemy zapisać jako `Coal tab[10]` - oznacza to, że tworzymy tablicę, która przechowuje 10 elementów typu Coal (węgiel).
 
-===
+___
 
 <img width="600" data-src="img/array.gif" alt="Tablica w pamięci" class="plain">
 
@@ -29,7 +29,7 @@
 * `tab[0]` - pierwszy element tablicy `tab`
 * `tab[9]` - ostatni element 10-elementowej tablicy `tab`
 
-===
+___
 
 ## Przykład modyfikacji tablicy
 
@@ -43,7 +43,7 @@ tab[9] = 10;
 
 Można to zrobić lepiej z użyciem pętli. <!-- .element: class="fragment fade-in" -->
 
-===
+___
 
 ### `operator[]`
 
@@ -54,7 +54,7 @@ int tab[10];
 tab[10] = 42;  // !!! undefined behavior
 ```
 
-===
+___
 
 ## Zadanie
 

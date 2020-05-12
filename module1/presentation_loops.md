@@ -8,7 +8,7 @@
     <img width="500" data-src="../img/coders_school_logo.png" alt="Coders School" class="plain">
 </a>
 
-===
+___
 
 ## Pętle
 
@@ -16,7 +16,7 @@ Pętla służy do powtarzania instrukcji, które chcemy by się wykonały więce
 
 Podstawowe pętle: `while`, `for`
 
-===
+___
 
 ## Pętla `while`
 
@@ -27,7 +27,7 @@ Podstawowe pętle: `while`, `for`
 * Jemy zupę, aż talerz nie będzie pusty <!-- .element: class="fragment fade-in" -->
 * Przeszukujemy kontakty w telefonie aż nie znajdziemy interesującej nas osoby <!-- .element: class="fragment fade-in" -->
 
-===
+___
 
 ### Konstrukcja pętli `while`
 
@@ -47,7 +47,7 @@ while (a == b) {
 ```
 <!-- .element: class="fragment fade-in" -->
 
-===
+___
 
 ## Pętla `for`
 
@@ -58,7 +58,7 @@ while (a == b) {
 * <!-- .element: class="fragment fade-in" --> Piszemy egzamin składający się z 4 zadań -> liczba kroków (jak umiemy to 4, jak nie to jeszcze wykonujemy podprogram `ściągaj`)
 * <!-- .element: class="fragment fade-in" --> Zapinamy koszule (o ile nie wyrwiemy żadnego guzika)
 
-===
+___
 
 ### Konstrukcja pętli `for`
 
@@ -77,13 +77,13 @@ for (size_t i = 0 ; i < 10 ; i+=2) {
 ```
 <!-- .element: class="fragment fade-in" -->
 
-===
+___
 
 Każdą pętlę `for` można zamienić na `while` i odwrotnie. Wybieramy wygodniejszy dla nas zapis, zazwyczaj w zależności od znajomości liczby kroków.
 
 Istnieje jeszcze jeden rodzaj pętli. Jaki?
 
-===
+___
 
 ## Pętla `do/while`
 
@@ -97,7 +97,7 @@ Kod w pętlach `while` lub `for` może się nie wykonać ani razu, gdy warunek n
 
 Kod w pętli `do/while` wykona się co najmniej raz.
 
-===
+___
 
 ## Zadanie
 

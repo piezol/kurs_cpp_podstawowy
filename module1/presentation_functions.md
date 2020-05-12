@@ -8,7 +8,7 @@
     <img width="500" data-src="../img/coders_school_logo.png" alt="Coders School" class="plain">
 </a>
 
-===
+___
 
 ## Funkcje
 
@@ -18,7 +18,7 @@ Funkcja == podprogram == procedura <!-- .element: class="fragment fade-in" -->
 
 Przykładowo, w trakcie jazdy na rowerze naszą główną funkcją jest przemieszczanie się z punktu a do b. Jednak wykonujemy także kilka podprogramów, jak zmiana biegów, hamowanie, rozpędzanie, skręcanie. Podobnie w programie możemy wydzielić konkretne zachowania i przenieść je do funkcji, które nazwiemy tak, by sugerowały co robią. Ważne, aby funkcja robiła tylko jedną rzecz. Jedna funkcja zmienia biegi, druga hamuje, trzecia skręca. <!-- .element: class="fragment fade-in" -->
 
-===
+___
 
 ## Sygnatury funkcji (deklaracje)
 
@@ -34,14 +34,14 @@ Funkcja o nazwie bar, która zwraca typ double a przyjmuje 2 argumenty. Pierwszy
 
 `double bar(float, const int)` <!-- .element: class="fragment fade-in" -->
 
-===
+___
 
 ## Wywołania funkcji
 
 * `foo(5.0)` -> wywołujemy funkcję foo z argumentem double, który jest równy 5.0.
 * `double result = bar(5.4f, 10)` -> wywołujemy funkcję bar z argumentem float (5.4f) oraz int (10) a jej wynik przypisujemy do zmiennej typu double o nazwie result.
 
-===
+___
 
 ## Zadanie
 

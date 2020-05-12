@@ -8,7 +8,7 @@
     <img width="500" data-src="../img/coders_school_logo.png" alt="Coders School" class="plain">
 </a>
 
-===
+___
 
 ## Instrukcja `if`
 
@@ -19,7 +19,7 @@ Instrukcja warunkowa to nic innego jak zadanie programowi pytania np.:
 * Czy osiągnięcie zostało zdobyte przez gracza? <!-- .element: class="fragment fade-in" -->
 * Czy liczba jest większa od maksymalnie dopuszczanej? <!-- .element: class="fragment fade-in" -->
 
-===
+___
 
 ## Konstrukcja `if`
 
@@ -29,7 +29,7 @@ if (condition) {
 }
 ```
 
-===
+___
 
 ## Łączenie warunków
 
@@ -50,7 +50,7 @@ if (player_has_20_dex || player_has_18_int || player_has_22_str)
 
 W tym przypadku wystarczy spełnić jeden z 3 warunków. Mogą zostać spełnione wszystkie, ale wystarczy by został spełniony jeden dowolny. <!-- .element: class="fragment fade-in" -->
 
-===
+___
 
 ## Instrukcja `else`
 
@@ -66,7 +66,7 @@ if (number < 2) {
 }
 ```
 
-===
+___
 
 ## Instrukcja `switch/case`
 
@@ -88,7 +88,7 @@ default:
 * `break` informuje, że wychodzimy z instrukcji warunkowej `switch` i konstytuujemy dalej program. Jego brak spowoduje, że wykonają się instrukcje z kolejnego `case`.
 * `deafult` jest to miejsce gdzie program dotrze, gdy żaden inny warunek nie zostanie spełniony
 
-===
+___
 
 ## Zadanie
 
