@@ -53,3 +53,29 @@ Do elementu tablicy odwołujemy się przez `operator[]`. Musimy pamiętać, żeb
 int tab[10];
 tab[10] = 42;  // !!! undefined behavior
 ```
+
+===
+
+## Zadanie
+
+Zmodyfikuj program, tak aby wypełniał tablicę kolejnymi nieparzystymi liczbami: 1, 3, 5, 7, ... [Pobierz zadanie](task2.cpp)
+
+```cpp
+#include <iostream>
+
+constexpr size_t tab_size = 100;
+
+int main() {
+    int tab[tab_size];
+
+    for (size_t i = 0; i < tab_size; ++i) {
+        tab[i] = i;
+    }
+
+    for (size_t i = 0; i < tab_size; ++i) {
+        std::cout << tab[i] << "\n";
+    }
+
+    return 0;
+}
+```

@@ -25,7 +25,7 @@ Instrukcja warunkowa to nic innego jak zadanie programowi pytania np.:
 
 ```cpp
 if (condition) {
-  // do sth
+    // do sth
 }
 ```
 
@@ -56,11 +56,11 @@ Jeżeli program może różnie zareagować na spełnienie jakiś warunków może
 
 ```cpp
 if (number < 2) {
-  critical_miss();
+    critical_miss();
 } else if (number < 18) {
-  hit();
+    hit();
 } else {
-  critical_hit();
+    critical_hit();
 }
 ```
 
@@ -72,16 +72,36 @@ if (number < 2) {
 char option = getInput();
 switch (option) {
 case 'l':
-  goLeft();
-  break;
+    goLeft();
+    break;
 case 'r':
-  goRight();
-  break;
+    goRight();
+    break;
 default:
-  exit();
+    exit();
 }
 ```
 
 * `case` oznacza konkretny przypadek
 * `break` informuje, że wychodzimy z instrukcji warunkowej `switch` i konstytuujemy dalej program. Jego brak spowoduje, że wykonają się instrukcje z kolejnego `case`.
 * `deafult` jest to miejsce gdzie program dotrze, gdy żaden inny warunek nie zostanie spełniony
+
+===
+
+## Zadanie
+
+Dopisz funkcję `max`. Ma ona zwracać maksymalną z trzech podanych wartości. [Pobierz zadanie](task2.cpp)
+
+```cpp
+#include <iostream>
+
+// Write your function here
+
+int main() {
+    std::cout << "max (1, 2, 3): " << max(1, 2, 3) << "\n";
+    std::cout << "max (1, 2, 3): " << max(2, 3, 1) << "\n";
+    std::cout << "max (1, 2, 3): " << max(3, 2, 2) << "\n";
+
+    retrun 0;
+}
+```

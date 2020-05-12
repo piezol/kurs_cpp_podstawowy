@@ -21,25 +21,29 @@
 
 ===
 
-## Typ pusty
-
-* `void`
+## Typ pusty - `void`
 
 Nie można tworzyć obiektów typu `void`. Służy do zaznaczenia, że funkcja nic nie zwraca.
 Można tworzyć wskaźniki `void*` (zła praktyka w C++).
 
 ===
 
-## Typ logiczny
+## Typ logiczny - `bool`
 
-* `bool` (1 bajt) -> `false` lub `true`
+* Rozmiar: 1 bajt
+  * `sizeof(bool) == 1`
+* 2 możliwe wartości
+  * `false`
+  * `true`
 
 ===
 
 ## Typy znakowe
 
-* `char` (1 bajt) -> od `-128` do `127`
-* `unsigned char` (1 bajt) -> od `0` do `255`
+* Romiar: 1 bajt
+* 256 możliwych wartości
+* `char` -> od `-128` do `127`
+* `unsigned char` -> od `0` do `255`
 
 Przedrostek `unsigned` oznacza, że typ jest bez znaku (bez liczb ujemnych), czyli od 0 do jakieś dodatniej wartości.
 
@@ -62,15 +66,16 @@ Rozmiary dalszych typów zależą od platformy np. 32 bity, 64 bity.
 
 * `float` - zwykle 4 bajty
 * `double` - zwykle 8 bajtów
-
-Posiadają specjalne wartości:
-
-* `0`, `-0`
-* `-Inf`, `+Inf` (Infinity, nieskończoność)
-* `NaN` (Not a Number)
+* `long double` - zwykle 10 bajtów (rzadko stosowany)
+* Nie istnieją wersje `unsigned`. Typy zmiennoprzecinkowe zawsze mogą mieć ujemne wartości
+* Posiadają specjalne wartości:
+  * `0`, `-0` (ujemne zero)
+  * `-Inf`, `+Inf` (Infinity, nieskończoność)
+  * `NaN` (Not a Number)
 
 Uwaga! Porównanie `NaN == NaN` daje `false`
 
+Zaawansowana lektura: [Standard IEEE754 definiujący typy zmiennoprzecinkowe](https://en.wikipedia.org/wiki/IEEE_754)
 ===
 
 ## Aliasy typów
@@ -82,18 +87,18 @@ Istnieją też typy, która są aliasami (inne nazewnictwo w celu lepszego zrozu
 Własne aliasy typów możemy tworzyć używając `typedef` lub `using`
 
 ```cpp
-typedef int Liczba;
-Liczba a = 5;   // int a = 5;
+typedef int Number;
+Number a = 5;   // int a = 5;
 
-using Liczba = int;
-Liczba b = 10;  // int b = 10;
+using Fraction = double;
+Fraction b = 10.2;  // double b = 10.2;
 ```
 
 ===
 
 ## Typ `auto`
 
-W pewnych miejscach możemy użyć typu `auto`. Kompilator sam wydedukuje typ, np na podstawie przypisanej wartości.
+W pewnych miejscach możemy użyć typu `auto`. Kompilator sam wydedukuje typ, np. na podstawie przypisanej wartości.
 
 ```cpp
   auto num = 5;         // int
@@ -102,6 +107,7 @@ W pewnych miejscach możemy użyć typu `auto`. Kompilator sam wydedukuje typ, n
   auto num = 5.f;       // float
   auto letter = 'a';    // char
   auto num = false;     // bool
+  auto sth;             // compilation error, unable to deduce type
 ```
 
 ===
@@ -118,6 +124,8 @@ Standard C++ definiuje taką zależność pomiędzy rozmiarami typów
 
 * Podstawowe: + - * /
 * Modyfikujące zmienną: += -= *= /=
+* Inkrementujące (+1) zmienną: ++
+* Dekrementujące (-1) zmienną: --
   
 Przykłady
 
@@ -130,9 +138,34 @@ int a = 5;
 a += 7; // a = 12
 ```
 
+```cpp
+int a = 5;
+++a; // a = 6
+a--; // a = 5
+```
+
 ===
 
-## Na koniec mały suchar
+## Pytania
+
+```cpp
+int i = 5;
+auto j = i++ - 1;
+```
+
+<span class="fragment fade-in">Ile wynoszą wartości `i` oraz `j`?</span>
+
+`i = 6` <!-- .element: class="fragment fade-in" -->
+
+`j = 4` <!-- .element: class="fragment fade-in" -->
+
+<span class="fragment fade-in">Jakiego typu jest `j`?</span>
+
+`int` <!-- .element: class="fragment fade-in" -->
+
+===
+
+## Mały suchar
 
 Kim jest Hobbit? <!-- .element: class="fragment fade-in" -->
 

@@ -1,4 +1,3 @@
-
 #include <iostream>
 
 constexpr size_t tab_size = 100;

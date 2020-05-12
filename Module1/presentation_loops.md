@@ -33,7 +33,7 @@ Podstawowe pętle: `while`, `for`
 
 ```cpp
 while (condition) {
-  // Do sth
+    // Do sth
 }
 ```
 
@@ -41,8 +41,8 @@ while (condition) {
 
 ```cpp
 while (a == b) {
-  std::cin >> a;
-  std::cin >> b;
+    std::cin >> a;
+    std::cin >> b;
 }
 ```
 
@@ -63,7 +63,7 @@ while (a == b) {
 
 ```cpp
 for (variable = initial_value; condition; variable_change) {
-  // Do sth
+    // Do sth
 }
 ```
 
@@ -71,7 +71,7 @@ for (variable = initial_value; condition; variable_change) {
 
 ```cpp
 for (size_t i = 0 ; i < 10 ; i+=2) {
-  std::cout << "i: " << i << '\n';
+    std::cout << "i: " << i << '\n';
 }
 ```
 
@@ -87,10 +87,35 @@ Istnieje jeszcze jeden rodzaj pętli. Jaki?
 
 ```cpp
 do {
-  // Do sth
+    // Do sth
 } while(condition)
 ```
 
 Kod w pętlach `while` lub `for` może się nie wykonać ani razu, gdy warunek nie będzie nigdy spełniony.
 
 Kod w pętli `do/while` wykona się co najmniej raz.
+
+===
+
+## Zadanie
+
+Dopisz funkcję `printString`. Ma ona wypisywać tekst podany jako pierwszy argument tyle razy, jaka jest wartość liczby podanej jako drugi argument. [Pobierz zadanie](task3.cpp)
+
+```cpp
+#include <iostream>
+
+// Write your function here
+
+int main() {
+    printString("Hello", 5);
+    std::cout << "\n";
+
+    printString("AbC", 2);
+    std::cout << "\n";
+
+    printString("HiHi ", 6);
+    std::cout << "\n";
+
+    return 0;
+}
+```

@@ -38,7 +38,7 @@ pierwszy to float, a drugi to const int (const oznacza, że wartość ta nie mo�
 
 ## Zadanie
 
-Dopisz brakującą funkcję. [Pobierz zadanie](zadanie1.cpp)
+Dopisz brakującą funkcję `multiply`. Ma ona pomnożyć dwie liczby podane jako jej parametry. [Pobierz zadanie](task1.cpp)
 
 ```cpp
 #include <iostream>
