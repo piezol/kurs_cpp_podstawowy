@@ -8,7 +8,7 @@
     <img width="500" data-src="../img/coders_school_logo.png" alt="Coders School" class="plain">
 </a>
 
----
+===
 
 ## Prosta matematyka
 
@@ -112,7 +112,7 @@ Standard C++ definiuje taką zależność pomiędzy rozmiarami typów
 1 == sizeof(char) <= sizeof(short) <= sizeof(int) <= sizeof(long) <= sizeof(long long)
 ```
 
----
+===
 
 ## Operacje arytmetyczne
 

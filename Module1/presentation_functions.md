@@ -8,7 +8,7 @@
     <img width="500" data-src="../img/coders_school_logo.png" alt="Coders School" class="plain">
 </a>
 
----
+===
 
 ## Funkcje
 
@@ -33,3 +33,23 @@ pierwszy to float, a drugi to const int (const oznacza, że wartość ta nie mo�
 
 * `foo(5.0)` -> wywołujemy funkcję foo z argumentem double, który jest równy 5.0.
 * `double result = bar(5.4, 10)` -> wywołujemy funkcję bar z argumentem float (5.4) oraz int (10) a jej wynik przypisujemy do zmiennej typu double o nazwie result.
+
+===
+
+## Zadanie
+
+Dopisz brakującą funkcję. [Pobierz zadanie](zadanie1.cpp)
+
+```cpp
+#include <iostream>
+
+// Write missing function here
+
+int main() {
+    std::cout << "4 * 5: " << multiply(4, 5) << "\n";
+    std::cout << "10 * 5: " << multiply(10, 5) << "\n";
+    std::cout << "-5 * 5: " << multiply(-5, 5) << "\n";
+
+    return 0;
+}
+```

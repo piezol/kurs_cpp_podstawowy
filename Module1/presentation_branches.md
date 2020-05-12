@@ -8,7 +8,7 @@
     <img width="500" data-src="../img/coders_school_logo.png" alt="Coders School" class="plain">
 </a>
 
----
+===
 
 ## Instrukcja `if`
 
@@ -64,7 +64,7 @@ if (number < 2) {
 }
 ```
 
----
+===
 
 ## Instrukcja `switch/case`
 

@@ -8,7 +8,7 @@
     <img width="500" data-src="../img/coders_school_logo.png" alt="Coders School" class="plain">
 </a>
 
----
+===
 
 ## Pętle
 
@@ -75,13 +75,13 @@ for (size_t i = 0 ; i < 10 ; i+=2) {
 }
 ```
 
----
+===
 
 Każdą pętlę `for` można zamienić na `while` i odwrotnie. Wybieramy wygodniejszy dla nas zapis, zazwyczaj w zależności od znajomości liczby kroków.
 
 Istnieje jeszcze jeden rodzaj pętli. Jaki?
 
----
+===
 
 ## Pętla `do/while`
 
