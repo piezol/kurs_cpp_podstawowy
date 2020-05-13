@@ -39,10 +39,10 @@ ___
 ## Wywołania funkcji
 
 `foo(5.0)` -> wywołujemy funkcję `foo` z argumentem `double`, który jest równy `5.0`
-<!-- .element: class="fragment fade-in" --> 
+<!-- .element: class="fragment fade-in" -->
 
 `double result = bar(5.4f, 10)` -> wywołujemy funkcję `bar` z argumentem `float (5.4f)` oraz `int (10)` a jej wynik przypisujemy do zmiennej typu `double` o nazwie `result`.
-<!-- .element: class="fragment fade-in" --> 
+<!-- .element: class="fragment fade-in" -->
 
 ___
 
