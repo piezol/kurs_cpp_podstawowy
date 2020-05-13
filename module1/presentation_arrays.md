@@ -47,12 +47,13 @@ ___
 
 ### `operator[]`
 
-Do elementu tablicy odwołujemy się przez `operator[]`. Musimy pamiętać, żeby zawsze odwoływać się do istniejącego elementu tablicy. Inaczej program będzie miał niezdefiniowane zachowanie, gdyż spróbujemy uzyskać dostęp do pamięci, która nie należy do tablicy. Mówimy, że znajdują się tam śmieci. W najlepszym przypadku system operacyjny to wykryje i dostaniemy **crash** (segmentation fault). W najgorszym będziemy działać na niepoprawnych losowych danych. Skutki mogą być bardzo poważne (<span class="fragment highlight-red">katastrofy promów kosmicznych</span>, <span class="fragment highlight-red">napromieniowanie od aparatury medycznej</span>).
+Do elementu tablicy odwołujemy się przez `operator[]`. Musimy pamiętać, żeby zawsze odwoływać się do istniejącego elementu tablicy. Inaczej program będzie miał niezdefiniowane zachowanie, gdyż spróbujemy uzyskać dostęp do pamięci, która nie należy do tablicy. Mówimy, że znajdują się tam śmieci. W najlepszym przypadku system operacyjny to wykryje i dostaniemy <span class="fragment highlight-red">**crash** (segmentation fault)</span>. W najgorszym będziemy działać na niepoprawnych losowych danych. Skutki mogą być bardzo poważne (<span class="fragment highlight-red">katastrofy promów kosmicznych</span>, <span class="fragment highlight-red">napromieniowanie od aparatury medycznej</span>).
 
 ```cpp
 int tab[10];
-tab[10] = 42;  // !!! undefined behavior
+tab[10] = 42;  // !!! undefined behavior (UB)
 ```
+<!-- .element: class="fragment fade-in" -->
 
 ___
 

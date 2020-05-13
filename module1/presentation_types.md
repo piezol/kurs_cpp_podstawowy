@@ -15,16 +15,24 @@ ___
 * <!-- .element: class="fragment fade-in" --> 1 bajt == 8 bitów
 * <!-- .element: class="fragment fade-in" --> W binarnym totolotku wylosowane liczby mogą mieć `0` lub `1`
 * <!-- .element: class="fragment fade-in" --> Zatem podczas losowania 8 numerków możemy otrzymać przykładowo: `1 0 1 0 1 0 1 0`
-* <!-- .element: class="fragment fade-in" --> Takich kombinacji jest dokładnie `128 -> (2^8)`
-* <!-- .element: class="fragment fade-in" --> Zatem na 1 bajcie (8 bitach) możemy zapisać 128 liczb, np. od 0 do 127
+* <!-- .element: class="fragment fade-in" --> Takich kombinacji jest dokładnie `256 -> (2^8)`
+* <!-- .element: class="fragment fade-in" --> Zatem na 1 bajcie (8 bitach) możemy zapisać 256 liczb, np. od 0 do 255
 * <!-- .element: class="fragment fade-in" --> Jeżeli w totolotku losujemy 32 numerki, (32/8 = 4) czyli 4 bajty to takich kombinacji jest `2^32` (czyli ponad 4 miliardy)
 
 ___
 
 ## Typ pusty - `void`
 
-Nie można tworzyć obiektów typu `void`. Służy do zaznaczenia, że funkcja nic nie zwraca.
-Można tworzyć wskaźniki `void*` (zła praktyka w C++).
+* <!-- .element: class="fragment fade-in" --> Nie można tworzyć obiektów typu `void`
+* <!-- .element: class="fragment fade-in" --> Służy do zaznaczenia, że funkcja nic nie zwraca
+* <!-- .element: class="fragment fade-in" --> Można tworzyć wskaźniki `void*` (zła praktyka w C++)
+* <!-- .element: class="fragment fade-in" --> NIE służy do oznaczania, że funkcja nie przyjmuje argumentów
+
+```cpp
+int fun(void) { /* ... */ }  // bad practice, C style
+int fun() { /* ... */ }      // good practice, C++ style
+```
+<!-- .element: class="fragment fade-in" -->
 
 ___
 
@@ -40,16 +48,19 @@ ___
 
 ## Typy znakowe
 
-* Romiar: 1 bajt
+* Rozmiar: 1 bajt
 * 256 możliwych wartości
 * `char` -> od `-128` do `127`
 * `unsigned char` -> od `0` do `255`
 
-Przedrostek `unsigned` oznacza, że typ jest bez znaku (bez liczb ujemnych), czyli od 0 do jakieś dodatniej wartości. 
+Przedrostek `unsigned` oznacza, że typ jest bez znaku (bez liczb ujemnych), czyli od 0 do jakieś dodatniej wartości.
+<!-- .element: class="fragment fade-in" -->
 
-Rozmiar typów logicznych i znakowych to zawsze 1 bajt. <!-- .element: class="fragment fade-in" -->
+Rozmiar typów logicznych i znakowych to zawsze 1 bajt.
+<!-- .element: class="fragment fade-in" -->
 
-Rozmiary dalszych typów zależą od platformy np. 32 bity, 64 bity. <!-- .element: class="fragment fade-in" -->
+Rozmiary dalszych typów zależą od platformy np. 32 bity, 64 bity.
+<!-- .element: class="fragment fade-in" -->
 
 ___
 
@@ -67,15 +78,17 @@ ___
 * `float` - zwykle 4 bajty
 * `double` - zwykle 8 bajtów
 * `long double` - zwykle 10 bajtów (rzadko stosowany)
-* Typy zmiennoprzecinkowe zawsze mogą mieć ujemne wartości (Nie istnieją wersje unsigned) <!-- .element: class="fragment fade-in" -->
+* Typy zmiennoprzecinkowe zawsze mogą mieć ujemne wartości (nie istnieją wersje unsigned) <!-- .element: class="fragment fade-in" -->
 * Posiadają specjalne wartości: <!-- .element: class="fragment fade-in" -->
   * `0`, `-0` (ujemne zero)
   * `-Inf`, `+Inf` (Infinity, nieskończoność)
   * `NaN` (Not a Number)
 
 Uwaga! Porównanie `NaN == NaN` daje `false` <!-- .element: class="fragment highlight-red" -->
+<!-- .element: class="fragment fade-in" -->
 
 Zaawansowana lektura: [Standard IEEE754 definiujący typy zmiennoprzecinkowe](https://en.wikipedia.org/wiki/IEEE_754)
+<!-- .element: class="fragment fade-in" -->
 
 ___
 
@@ -84,8 +97,10 @@ ___
 Istnieją też typy, która są aliasami (inne nazewnictwo w celu lepszego zrozumienia typu).
 
 `std::size_t` w zależności od kompilatora może być typu (`unsigned short`, `unsigned int`, `unsigned long`, `unsigned long long`). Przeważnie jest on typu `unsigned int`. Warto wykorzystywać go, gdy nasza zmienna będzie odnosić się do jakiegoś rozmiaru np. wielkość tablicy.
+<!-- .element: class="fragment fade-in" -->
 
 Własne aliasy typów możemy tworzyć używając `typedef` lub `using`
+<!-- .element: class="fragment fade-in" -->
 
 ```cpp
 typedef int Number;
@@ -94,6 +109,7 @@ Number a = 5;   // int a = 5;
 using Fraction = double;
 Fraction b = 10.2;  // double b = 10.2;
 ```
+<!-- .element: class="fragment fade-in" -->
 
 ___
 
@@ -129,27 +145,30 @@ ___
 
 ## Operacje arytmetyczne
 
-* Podstawowe: + - * /
-* Modyfikujące zmienną: += -= *= /=
-* Inkrementujące (+1) zmienną: ++
-* Dekrementujące (-1) zmienną: --
+* Podstawowe: + - * / <!-- .element: class="fragment fade-in" -->
+* Modyfikujące zmienną: += -= *= /= <!-- .element: class="fragment fade-in" -->
+* Inkrementujące (+1) zmienną: ++ <!-- .element: class="fragment fade-in" -->
+* Dekrementujące (-1) zmienną: -- <!-- .element: class="fragment fade-in" -->
   
-Przykłady
+### Przykłady <!-- .element: class="fragment fade-in" -->
 
 ```cpp
 int a = 5 + 7; // a = 12
 ```
+<!-- .element: class="fragment fade-in" -->
 
 ```cpp
 int a = 5;
 a += 7; // a = 12
 ```
+<!-- .element: class="fragment fade-in" -->
 
 ```cpp
 int a = 5;
 ++a; // a = 6
 a--; // a = 5
 ```
+<!-- .element: class="fragment fade-in" -->
 
 ___
 
@@ -184,3 +203,4 @@ ___
 
 * [Fundamental types on cppreference.com](https://en.cppreference.com/w/cpp/language/types)
 * [Standard IEEE754 definiujący typy zmiennoprzecinkowe](https://en.wikipedia.org/wiki/IEEE_754)
+
