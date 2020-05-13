@@ -35,8 +35,6 @@ if (CMAKE_VERSION VERSION_LESS 2.8.11)
   include_directories("${gtest_SOURCE_DIR}/include")
 endif()
 
-
-
 project(calculate)
 enable_testing()
 
@@ -45,4 +43,4 @@ add_executable(${PROJECT_NAME} main.cpp)
 add_executable(${PROJECT_NAME}-ut test.cpp)
 
 target_link_libraries(${PROJECT_NAME}-ut gtest_main)
-add_test(NAME example_test COMMAND ${PROJECT_NAME}-ut)
+add_test(NAME calculate_test COMMAND ${PROJECT_NAME}-ut)

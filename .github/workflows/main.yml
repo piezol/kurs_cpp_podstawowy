@@ -1,0 +1,20 @@
+name: C++ with CMake CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@master
+    - name: mkdir build
+      run: mkdir build
+    - name: cd build
+      run: cd build
+    - name: cmake
+      run: cmake ..
+    - name: make
+      run: make
+    - name: ctest
+      run: ctest -V

@@ -88,11 +88,11 @@ mkdir build   # tworzy katalog build
 cd build      # przechodzi do katalogu build
 cmake ..      # generuje system budowania wg przepisu z pliku ../CMakeLists.txt
 make          # kompiluje
-ctest         # odpala testy
+ctest -V      # odpala testy
 ```
 
 7. Zaimplementuj funkcjonalność (najlepiej po kawałku, np. zacznij od samego dodawania)
-8. Sprawdź, czy implementacja przechodzi testy - `make` (kompilacja) oraz `ctest` (uruchomienie testów)
+8. Sprawdź, czy implementacja przechodzi testy - `make` (kompilacja) oraz `ctest -V` (uruchomienie testów)
 9. Zrób commit z opisem działającej funkcjonalności - `git commit -am"adding works"`
 10. Wróć do punktu 7 i zaimplementuj kolejny kawałek. Jeśli rozwiązanie przechodzi wszystkie testy przejdź do kolejnego punktu
 11. Wypchnij zmiany do swojego forka - `git push origin calculate`
