@@ -8,10 +8,10 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@master
-    - name: mkdir build
-      run: mkdir build
-    - name: cd build
-      run: cd build
+    - name: mkdir module1/homework/calculate/build
+      run: mkdir module1/homework/calculate/build
+    - name: cd module1/homework/calculate/build
+      run: cd module1/homework/calculate/build
     - name: cmake
       run: cmake ..
     - name: make
