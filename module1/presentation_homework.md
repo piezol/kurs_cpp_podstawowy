@@ -33,19 +33,20 @@ ___
 
 ### Post-work
 
-* Jeśli nie wiesz czym jest `operator %` to się dowiedz. Przyda się do pracy domowej :)
+<!-- * Jeśli nie wiesz czym jest `operator %` to się dowiedz. Przyda się do pracy domowej :) -->
 * Poczytaj dokumentację [std::string](https://en.cppreference.com/w/cpp/string/basic_string). Znajdziesz tam m.in. opis funkcji `std::to_string`. Przyda się :)
 * Zadanie 1 - Calculate (5 punktów)
 * Zadanie 2 - Fibonacci - rekurencja i iteracja (6 punktów)
-* Zadanie 3 - NWD (LCM) i NWW (GCD) (6 punktów)
+<!-- * Zadanie 3 - NWD (LCM) i NWW (GCD) (6 punktów) -->
 
 #### Bonus za punktualność
 
-Za dostarczenie każdego zadania przed 24.05.2020 (niedziela) do 23:59 dostaniesz 2 bonusowe punkty (razem 6 punktów za 3 zadania).
+Za dostarczenie każdego zadania przed 24.05.2020 (niedziela) do 23:59 dostaniesz 2 bonusowe punkty (razem 4 punkty za 2 zadania).
 
 ### Pre-work
 
 * Poczytaj dokumentację typu [std::vector](https://en.cppreference.com/w/cpp/container/vector). Poklikaj na różne funkcje i patrz głównie na przykłady użycia na samym dole ston.
+* Możesz przyjrzeć się plikom z testami w zadaniach i spróbować dopisać własne przypadki testowe
 
 #### [Zadania w repo](https://github.com/coders-school/kurs_cpp_podstawowy/tree/master/module1/homework)
 

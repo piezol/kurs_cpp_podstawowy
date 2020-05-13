@@ -1,5 +1,7 @@
 # Praca domowa
 
+___
+
 ## Zadanie 1
 
 Zaimplementuj funkcję, której zadaniem ma być wykonywanie działań arytmetycznych na dwóch liczbach.
@@ -33,6 +35,24 @@ Zmodyfikuj jedynie plik `calculate.hpp`. Reszty plików nie modyfikuj, chyba że
 Plik `main.cpp` zawiera funkcję główną. Jeśli chcesz manualnie przetestować swój program po skompilowaniu go uruchom `./calculate`
 
 Plik `test.cpp` zawiera testy. Testy uruchamia się wpisując `ctest -V` po skompilowaniu. Przełącznik `-V` powoduje, że wyświetlane są informacje o testach, które przeszły lub nie.
+
+___
+
+## Zadanie 2 - Fibonacci
+
+Zaimplementuj dwie funkcje. Obie mają liczyć n-tą liczbę [ciągu Fibonacciego](https://pl.wikipedia.org/wiki/Ciąg_Fibonacciego), ale na odmienne sposoby.
+
+* iteracyjnie (z użyciem pętli)
+* rekurencyjnie (funkcja ma wołać samą siebie)
+
+Funkcje muszą mieć określone sygnatury:
+
+```cpp
+int fibonacci_iterative(int sequence);
+int fibonacci_recursive(int sequence);
+```
+
+___
 
 ## Dostarczenie zadań
 
