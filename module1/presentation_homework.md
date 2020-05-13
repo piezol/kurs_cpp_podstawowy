@@ -27,25 +27,32 @@ ___
     * `Type t[N]`, `operator[]`
 
 ___
+<!-- .slide: style="font-size: 0.8em" -->
 
 ## Praca domowa
 
 ### Post-work
 
-* `operator%`
-* zad 1, 2, 3
-* zad 5 - Fibonacci - rekurencja i klasycznie
-* zad 6 LCM i GCD
+* Jeśli nie wiesz czym jest `operator %` to się dowiedz. Przyda się do pracy domowej :)
+* Poczytaj dokumentację [std::string](https://en.cppreference.com/w/cpp/string/basic_string). Znajdziesz tam m.in. opis funkcji `std::to_string`. Przyda się :)
+* Zadanie 1 - Calculate (5 punktów)
+* Zadanie 2 - Fibonacci - rekurencja i iteracja (6 punktów)
+* Zadanie 3 - NWD (LCM) i NWW (GCD) (6 punktów)
+
+#### Bonus za punktualność
+
+Za dostarczenie każdego zadania przed 24.05.2020 (niedziela) do 23:59 dostaniesz 2 bonusowe punkty (razem 6 punktów za 3 zadania).
 
 ### Pre-work
 
-* c
-* d
+* Poczytaj dokumentację typu [std::vector](https://en.cppreference.com/w/cpp/container/vector). Poklikaj na różne funkcje i patrz głównie na przykłady użycia na samym dole ston.
+
+#### [Zadania w repo](https://github.com/coders-school/kurs_cpp_podstawowy/tree/master/module1/homework)
 
 ___
 <!-- .slide: style="font-size: 0.7em" -->
 
-## Zadanie 1
+## Zadanie 1 - Calculate
 
 Zaimplementuj funkcję, której zadaniem ma być wykonywanie działań arytmetycznych na dwóch liczbach.
 
@@ -69,6 +76,22 @@ W przypadku podania błędnego parametru `command` funkcja powinna zwrócić nap
 auto result = calculate("add", 2, 3);  // result = "5"
 result = calculate("multiply", 2, 3);  // result = "6"
 result = calculate("hello", 2, 3);     // result = "Invalid data"
+```
+
+___
+
+## Zadanie 2 - Fibonacci
+
+Zaimplementuj dwie funkcje. Obie mają liczyć n-tą liczbę [ciągu Fibonacciego](https://pl.wikipedia.org/wiki/Ciąg_Fibonacciego), ale na odmienne sposoby.
+
+* iteracyjnie (z użyciem pętli)
+* rekurencyjnie (funkcja ma wołać samą siebie)
+
+Funkcje muszą mieć określone sygnatury:
+
+```cpp
+int fibonacci_iterative(int sequence);
+int fibonacci_recursive(int sequence);
 ```
 
 ___
