@@ -1,7 +1,7 @@
 #include <iostream>
 
 // Write missing function here
-int multiply(int a, int b) {
+int multiply(const int a, const int b) {
   return a * b;
 }
 
