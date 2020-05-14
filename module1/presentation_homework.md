@@ -104,7 +104,7 @@ ___
 2. Ściągnij swój fork - `git clone https://github.com/YOURNICK/kurs_cpp_podstawowy.git`
 3. Przejdź do katalogu kurs_cpp_podstawowy - `cd kurs_cpp_podstawowy`
 4. Utwórz gałąź o nazwie `calculate` na rozwiązanie zadania calculate - `git checkout -b calculate`
-5. Przejdź do katalogu homework/calculate - `cd homework/calculate`
+5. Przejdź do katalogu module1/homework/calculate - `cd module1/homework/calculate`
 6. Tutaj znajduje się szkielet programu, który musisz wypełnić. Szkielet programu zawiera już testy, które sprawdzą, czy Twoja implementacja jest poprawna. Zanim rozpoczniesz implementację wpisz następujące zaklęcia:
 
 ```bash
