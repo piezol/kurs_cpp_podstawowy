@@ -5,8 +5,8 @@ int NWD(int lhs, int rhs) {
     if(lhs==0 || rhs==0){
         return std::max(lhs, rhs);
     }
-    lhs = abs(lhs);
-    rhs = abs(rhs);
+    lhs = std::abs(lhs);
+    rhs = std::abs(rhs);
     int temp;
     while(rhs != 0){
         temp = rhs;
