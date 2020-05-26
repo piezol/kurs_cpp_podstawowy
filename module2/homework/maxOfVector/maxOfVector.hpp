@@ -3,6 +3,13 @@
 #include <limits>
 
 int maxOfVector(const std::vector<int>& vec) {
-    // TODO: Implement me :)
-    return {};
+    // Would fail for empty vec - but the behaviour is unspecified in task
+    auto currentMax = *vec.begin();
+    for(auto el : vec){
+        if (el > currentMax){
+            currentMax = el;
+        }
+    }
+
+    return currentMax;
 }
