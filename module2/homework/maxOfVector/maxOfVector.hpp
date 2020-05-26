@@ -5,7 +5,7 @@
 int maxOfVector(const std::vector<int>& vec) {
     // Would fail for empty vec - but the behaviour is unspecified in task
     auto currentMax = *vec.begin();
-    for(auto el : vec){
+    for(const auto& el : vec){
         if (el > currentMax){
             currentMax = el;
         }
