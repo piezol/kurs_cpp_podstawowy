@@ -1,8 +1,8 @@
 #pragma once
-#include <math.h>
+#include <cmath>
 #include <algorithm>
 int NWD(int lhs, int rhs) {
-    if(lhs==0 || rhs==0){
+    if(lhs == 0 || rhs == 0){
         return std::max(lhs, rhs);
     }
     lhs = std::abs(lhs);
@@ -21,8 +21,8 @@ int NWW(int lhs, int rhs) {
     if(lhs == 0 || rhs == 0){
         return 0;
     }
-    lhs = abs(lhs);
-    rhs = abs(rhs);
+    lhs = std::abs(lhs);
+    rhs = std::abs(rhs);
     int result;
     result = lhs/NWD(lhs, rhs) * rhs;
     return result;
