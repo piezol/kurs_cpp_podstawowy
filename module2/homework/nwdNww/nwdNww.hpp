@@ -23,5 +23,5 @@ int NWW(int lhs, int rhs) {
     }
     lhs = std::abs(lhs);
     rhs = std::abs(rhs);
-   return  lhs/NWD(lhs, rhs) * rhs;
+    return  lhs/NWD(lhs, rhs) * rhs;
 }
