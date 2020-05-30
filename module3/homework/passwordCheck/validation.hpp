@@ -1,3 +1,5 @@
+#include <string>
+
 enum class ErrorCode {
     Ok,
     PasswordNeedsAtLeastNineCharacters,
@@ -5,4 +7,6 @@ enum class ErrorCode {
     PasswordNeedsAtLeastOneSpecialCharacter,
     PasswordNeedsAtLeastOneUppercaseLetter,
     PasswordsDoesNotMatch
-}
+};
+
+std::string getErrorMessage(ErrorCode errorCode);
