@@ -2,7 +2,7 @@
 #include <iostream>
 #include "vectorFunctions.hpp"
 
-std::vector<std::shared_ptr<int>> generate(int count)
+std::vector<std::shared_ptr<int>> generate(const int count)
 {
     if(count < 1)
         return {};
@@ -32,7 +32,7 @@ void add10(const std::vector<std::shared_ptr<int>>& vec)
    }
 
 }
-void sub10(int * ptr)
+void sub10(int * const ptr)
 {
     if(ptr != nullptr){
         *ptr -= 10;
