@@ -1,4 +1,8 @@
 #include "validation.hpp"
+#include <algorithm>
+#include <array>
+#include <utility>
+
 
 
 std::string getErrorMessage(ErrorCode errorCode) {
@@ -22,6 +26,54 @@ std::string getErrorMessage(ErrorCode errorCode) {
 
 }
 
-bool doesPasswordsMatch(std::string firstPassword, std::string secondPassword){
+
+typedef std::pair<char, char> charRange;
+
+bool strHasDecimalDigits(std::string str) {
+    return std::any_of(str.begin(), str.end(), [](char c) { return c >= '0' and c <= '9';});
+}
+
+bool strHasUppercaseLetters(std::string str) {
+    return std::any_of(str.begin(), str.end(), [](char c) { return c >= 'A' and c <= 'Z';});
+}
+
+bool strHasSpecialCharacters(std::string str) {
+    static constexpr const std::array<charRange, 3> specialRanges =
+    {
+        charRange('!', '/'),
+        charRange(':', '@'),
+        charRange('[', '`')
+    };
+
+    return std::any_of(specialRanges.begin(), specialRanges.end(), [&str](charRange range) {
+        return std::any_of(str.begin(), str.end(), [&range](char c) {
+            return c >= range.first and c <= range.second;
+        });
+    });
+
+}
+
+bool doesPasswordsMatch(std::string firstPassword, std::string secondPassword) {
     return firstPassword == secondPassword;
+}
+
+ErrorCode checkPasswordRules(std::string password) {
+
+    if(password.length() < MIN_PASSWORD_LENGTH){
+        return ErrorCode::PasswordNeedsAtLeastNineCharacters;
+    }
+
+    if(!strHasDecimalDigits(password)){
+        return ErrorCode::PasswordNeedsAtLeastOneNumber;
+    }
+
+    if(!strHasUppercaseLetters(password)) {
+        return ErrorCode::PasswordNeedsAtLeastOneUppercaseLetter;
+    }
+
+    if(!strHasSpecialCharacters(password)) {
+        return ErrorCode::PasswordNeedsAtLeastOneSpecialCharacter;
+    }
+
+    return ErrorCode::Ok;
 }
