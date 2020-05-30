@@ -1,6 +1,7 @@
 #include "validation.hpp"
 #include <algorithm>
 #include <array>
+#include <cctype>
 #include <utility>
 
 
@@ -30,11 +31,11 @@ std::string getErrorMessage(ErrorCode errorCode) {
 typedef std::pair<char, char> charRange;
 
 bool strHasDecimalDigits(std::string str) {
-    return std::any_of(str.begin(), str.end(), [](char c) { return c >= '0' and c <= '9';});
+    return std::any_of(str.begin(), str.end(), [](char c) { return isdigit(c);});
 }
 
 bool strHasUppercaseLetters(std::string str) {
-    return std::any_of(str.begin(), str.end(), [](char c) { return c >= 'A' and c <= 'Z';});
+    return std::any_of(str.begin(), str.end(), [](char c) { return isupper(c);});
 }
 
 bool strHasSpecialCharacters(std::string str) {
