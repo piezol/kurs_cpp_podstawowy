@@ -10,3 +10,4 @@ enum class ErrorCode {
 };
 
 std::string getErrorMessage(ErrorCode errorCode);
+bool doesPasswordsMatch(std::string, std::string);

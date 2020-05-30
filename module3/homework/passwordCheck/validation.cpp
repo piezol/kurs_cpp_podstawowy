@@ -20,6 +20,8 @@ std::string getErrorMessage(ErrorCode errorCode) {
             return "Unrecognized error code";
     }
 
+}
 
-
+bool doesPasswordsMatch(std::string firstPassword, std::string secondPassword){
+    return firstPassword == secondPassword;
 }
