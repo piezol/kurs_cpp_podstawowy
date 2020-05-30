@@ -77,3 +77,11 @@ ErrorCode checkPasswordRules(std::string password) {
 
     return ErrorCode::Ok;
 }
+
+ErrorCode checkPassword(std::string firstPassword, std::string secondPassword){
+    if(!doesPasswordsMatch(firstPassword, secondPassword)){
+        return ErrorCode::PasswordsDoesNotMatch;
+    }
+
+    return checkPasswordRules(secondPassword); // by now we know that first and second are equal
+}
