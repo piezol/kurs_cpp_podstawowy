@@ -1,3 +1,5 @@
+#pragma once
+
 #include <string>
 
 const int MIN_PASSWORD_LENGTH = 9;

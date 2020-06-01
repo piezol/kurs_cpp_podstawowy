@@ -1,4 +1,5 @@
 #include "validation.hpp"
+
 #include <algorithm>
 #include <array>
 #include <cctype>
@@ -23,8 +24,6 @@ std::string getErrorMessage(const ErrorCode errorCode)
         return "Unrecognized error code";
     }
 }
-
-typedef std::pair<char, char> charRange;
 
 bool strHasDecimalDigits(const std::string& str)
 {
@@ -74,5 +73,5 @@ ErrorCode checkPassword(const std::string& firstPassword, const std::string& sec
         return ErrorCode::PasswordsDoesNotMatch;
     }
 
-    return checkPasswordRules(secondPassword); // by now we know that first and second are equal
+    return checkPasswordRules(secondPassword);
 }
