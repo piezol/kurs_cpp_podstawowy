@@ -2,16 +2,15 @@
 
 #include <iostream>
 
-
 std::vector<std::shared_ptr<int>> generate(const int count)
 {
-    if(count < 1)
+    if (count < 1)
         return {};
 
     std::vector<std::shared_ptr<int>> vec(count);
 
-    for(int i = 0; i < count; i++){
-        vec[i] = std::make_shared<int>(i);    
+    for (int i = 0; i < count; i++) {
+        vec[i] = std::make_shared<int>(i);
     }
 
     return vec;
@@ -19,23 +18,22 @@ std::vector<std::shared_ptr<int>> generate(const int count)
 
 void print(const std::vector<std::shared_ptr<int>>& vec)
 {
-    for(const auto& el : vec) {
-        std::cout << *el << '\t'; 
+    for (const auto& el : vec) {
+        std::cout << *el << '\t';
     }
 }
 
 void add10(const std::vector<std::shared_ptr<int>>& vec)
 {
-   for (const auto& el : vec) {
-       if(el){
+    for (const auto& el : vec) {
+        if (el) {
             *el += 10;
-       }
-   }
-
+        }
+    }
 }
-void sub10(int * const ptr)
+void sub10(int* const ptr)
 {
-    if(ptr){
+    if (ptr) {
         *ptr -= 10;
     }
 }
