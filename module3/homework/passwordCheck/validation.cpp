@@ -31,27 +31,15 @@ std::string getErrorMessage(const ErrorCode errorCode) {
 typedef std::pair<char, char> charRange;
 
 bool strHasDecimalDigits(const std::string& str) {
-    return std::any_of(str.begin(), str.end(), [](char c) { return isdigit(c);});
+    return std::any_of(str.begin(), str.end(), ::isdigit);
 }
 
 bool strHasUppercaseLetters(const std::string& str) {
-    return std::any_of(str.begin(), str.end(), [](char c) { return isupper(c);});
+    return std::any_of(str.begin(), str.end(), ::isupper);
 }
 
 bool strHasSpecialCharacters(const std::string& str) {
-    static constexpr const std::array<charRange, 3> specialRanges =
-    {
-        charRange('!', '/'),
-        charRange(':', '@'),
-        charRange('[', '`')
-    };
-
-    return std::any_of(specialRanges.begin(), specialRanges.end(), [&str](charRange range) {
-        return std::any_of(str.begin(), str.end(), [&range](char c) {
-            return c >= range.first and c <= range.second;
-        });
-    });
-
+    return std::any_of(str.begin(), str.end(), std::not1(std::ptr_fun(::isalnum)));
 }
 
 bool doesPasswordsMatch(const std::string& firstPassword, const std::string& secondPassword) {
