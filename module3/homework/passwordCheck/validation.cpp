@@ -5,8 +5,7 @@
 #include <cctype>
 #include <utility>
 
-std::string getErrorMessage(const ErrorCode errorCode)
-{
+std::string getErrorMessage(const ErrorCode errorCode) {
     switch (errorCode) {
     case ErrorCode::Ok:
         return "OK";
@@ -25,29 +24,23 @@ std::string getErrorMessage(const ErrorCode errorCode)
     }
 }
 
-bool strHasDecimalDigits(const std::string& str)
-{
+bool strHasDecimalDigits(const std::string& str) {
     return std::any_of(str.begin(), str.end(), ::isdigit);
 }
 
-bool strHasUppercaseLetters(const std::string& str)
-{
+bool strHasUppercaseLetters(const std::string& str) {
     return std::any_of(str.begin(), str.end(), ::isupper);
 }
 
-bool strHasSpecialCharacters(const std::string& str)
-{
+bool strHasSpecialCharacters(const std::string& str) {
     return std::any_of(str.begin(), str.end(), std::not1(std::ptr_fun(::isalnum)));
 }
 
-bool doesPasswordsMatch(const std::string& firstPassword, const std::string& secondPassword)
-{
+bool doesPasswordsMatch(const std::string& firstPassword, const std::string& secondPassword) {
     return firstPassword == secondPassword;
 }
 
-ErrorCode checkPasswordRules(const std::string& password)
-{
-
+ErrorCode checkPasswordRules(const std::string& password) {
     if (password.length() < MIN_PASSWORD_LENGTH) {
         return ErrorCode::PasswordNeedsAtLeastNineCharacters;
     }
@@ -67,8 +60,7 @@ ErrorCode checkPasswordRules(const std::string& password)
     return ErrorCode::Ok;
 }
 
-ErrorCode checkPassword(const std::string& firstPassword, const std::string& secondPassword)
-{
+ErrorCode checkPassword(const std::string& firstPassword, const std::string& secondPassword) {
     if (!doesPasswordsMatch(firstPassword, secondPassword)) {
         return ErrorCode::PasswordsDoesNotMatch;
     }
