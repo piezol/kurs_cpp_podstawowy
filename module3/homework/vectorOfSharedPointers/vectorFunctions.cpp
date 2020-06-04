@@ -6,10 +6,11 @@ std::vector<std::shared_ptr<int>> generate(const int count) {
     if (count < 1)
         return {};
 
-    std::vector<std::shared_ptr<int>> vec(count);
+    std::vector<std::shared_ptr<int>> vec;
+    vec.reserve(count);
 
     for (int i = 0; i < count; i++) {
-        vec[i] = std::make_shared<int>(i);
+        vec.emplace_back(std::make_shared<int>(i));
     }
 
     return vec;
